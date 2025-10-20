@@ -1,0 +1,51 @@
+# --- SO / Exploradores ---
+.DS_Store
+Thumbs.db
+
+# --- Python general ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.cache/
+.ipynb_checkpoints/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+
+# --- IDE/Editor ---
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Builds / distribuciones ---
+dist/
+build/
+pip-wheel-metadata/
+
+# --- Variables de entorno ---
+.env
+.env.*
+.python-version
+
+# --- Streamlit (si llegas a generar configs locales en repo) ---
+.streamlit/
+
+# --- Salidas del proyecto ---
+# Ignora TODO lo pesado de out/ pero deja la carpeta en el repo:
+out/*
+!out/.gitkeep
+

@@ -1,0 +1,10 @@
+# Solo Dashboard (Streamlit)
+streamlit
+pandas>=2.0
+numpy>=1.24
+altair
+matplotlib
+
+# Para abrir Excel/Parquet (opcional):
+openpyxl
+pyarrow

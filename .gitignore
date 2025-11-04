@@ -13,39 +13,42 @@ __pycache__/
 .eggs/
 .pytest_cache/
 .mypy_cache/
-.ruff_cache/
 .coverage
-.coverage.*
 coverage.xml
 htmlcov/
-.cache/
-.ipynb_checkpoints/
 
 # --- Entornos virtuales ---
 .venv/
 venv/
-env/
 
-# --- IDE/Editor ---
-.idea/
-.vscode/
-*.code-workspace
-
-# --- Builds / distribuciones ---
-dist/
+# --- Construcción / empaquetado ---
 build/
-pip-wheel-metadata/
+dist/
+
+# --- Editores/IDE ---
+.vscode/
+.idea/
 
 # --- Variables de entorno ---
 .env
 .env.*
 .python-version
 
-# --- Streamlit (si llegas a generar configs locales en repo) ---
+# --- Streamlit ---
 .streamlit/
+# Si deseas versionar configuración, incluye config y excluye secrets:
+#!.streamlit/config.toml
+#.streamlit/secrets.toml
 
-# --- Salidas del proyecto ---
-# Ignora TODO lo pesado de out/ pero deja la carpeta en el repo:
+# --- Datos y salidas ---
+# Mantén un CSV de ejemplo y el resto ignóralos
+data/*.csv
+!data/ventas_5k.csv
+!data/.gitkeep
+
+# Reportes/Agregados
 out/*
 !out/.gitkeep
 
+# --- Logs ---
+*.log

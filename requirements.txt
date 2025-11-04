@@ -1,11 +1,7 @@
-# Proyecto completo (CLI + Dashboard)
 pandas>=2.0
 numpy>=1.24
-python-docx
-streamlit
-altair
-matplotlib
-
-# Para abrir Excel/Parquet (opcional):
-openpyxl
+streamlit>=1.36
+altair>=5.0
 pyarrow
+openpyxl
+xlsxwriter
